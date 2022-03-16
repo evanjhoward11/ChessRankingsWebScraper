@@ -72,15 +72,4 @@ for columns in range(len(data)):
     x = sheet1.cell(row=1, column=columns+1)
     sheet1.column_dimensions[get_column_letter(x.column)].width = col_widths[x.value]
 
-
-
-
-
-
-
-
 wb.save("Chess Rankings Scraper.xlsx")
-
-
-# export data to pandas
-# highlight cell green or red based on rating change
